@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">HearthstoneScore</string>
+    <string name="player1">Player 1</string>
+    <string name="player2">Player 2</string>
+    <string name="damage">damage</string>
+    <string name="lifesteal">lifesteal</string>
+    <string name="armor">armor</string>
+    <string name="endturn">End Turn</string>
+    <string name="reset">reset</string>
+
+</resources>

@@ -1,0 +1,4 @@
+#Tue Feb 06 03:27:42 EET 2018
+base.0=C\:\\Users\\Elena\\ApkProjects\\MyQuizApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\10
+path.0=classes.dex
+renamed.0=classes.dex

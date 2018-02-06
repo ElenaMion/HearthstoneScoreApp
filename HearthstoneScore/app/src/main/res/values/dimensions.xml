@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="player_font_size">15sp</dimen>
+    <dimen name="life_font_size">35sp</dimen>
+    <dimen name="armor_font_size">20sp</dimen>
+    <dimen name="stats_font_size">14sp</dimen>
+    <dimen name="button_font_size">18sp</dimen>
+
+    <dimen name="stats_margin">7dp</dimen>
+    <dimen name="life_margin">5dp</dimen>
+    <dimen name="player_margin">10dp</dimen>
+    <dimen name="plus_minus_margin">10dp</dimen>
+
+    <dimen name="button_size">40dp</dimen>
+
+</resources>

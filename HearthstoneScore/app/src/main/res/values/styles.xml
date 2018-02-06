@@ -1,0 +1,81 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="PlayerText" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorPlayer</item>
+        <item name="android:textSize">@dimen/player_font_size</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_margin">@dimen/player_margin</item>
+    </style>
+
+    <style name="LifeText" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorLife</item>
+        <item name="android:textSize">@dimen/life_font_size</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_margin">@dimen/life_margin</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="ArmorText" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorArmor</item>
+        <item name="android:textSize">@dimen/armor_font_size</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="StatsText" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorStats</item>
+        <item name="android:textSize">@dimen/stats_font_size</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_margin">@dimen/stats_margin</item>
+    </style>
+
+    <style name="StatsNumber" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/stats_font_size</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">@dimen/plus_minus_margin</item>
+        <item name="android:layout_marginRight">@dimen/plus_minus_margin</item>
+        <item name="android:inputType">number</item>
+    </style>
+
+
+    <style name="MinusButtons" parent="@android:style/Widget">
+        <item name="android:layout_width">@dimen/button_size</item>
+        <item name="android:layout_height">@dimen/button_size</item>
+        <item name="android:text">-</item>
+    </style>
+
+    <style name="PlusButtons" parent="@android:style/Widget.Button">
+        <item name="android:layout_width">@dimen/button_size</item>
+        <item name="android:layout_height">@dimen/button_size</item>
+        <item name="android:text">+</item>
+    </style>
+
+    <style name="LinearButtons">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.hearthstonescore.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/main_game"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!--Player1 side-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/player1"
+                style="@style/PlayerText"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/player_margin"
+                android:fontFamily="@font/graduate"
+                android:text="@string/player1" />
+
+            <TextView
+                android:id="@+id/life1"
+                style="@style/LifeText"
+                android:fontFamily="casual"
+                android:text="Life: 30" />
+
+            <TextView
+                android:id="@+id/armor1"
+                style="@style/ArmorText"
+                android:fontFamily="casual"
+                android:text="Armor: 0" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/damage1_text_view"
+                style="@style/StatsText"
+                android:text="@string/damage"
+                android:textSize="@dimen/button_font_size" />
+
+            <!--Damage buttons-->
+            <LinearLayout style="@style/LinearButtons">
+
+                <Button
+                    android:id="@+id/decrementDamage1"
+                    style="@style/MinusButtons"
+                    android:onClick="decrementDamage1" />
+
+                <EditText
+                    android:id="@+id/damage1_number"
+                    style="@style/StatsNumber"
+                    android:text="0"
+                    android:textSize="@dimen/button_font_size" />
+
+                <Button
+                    android:id="@+id/incrementDamage1"
+                    style="@style/PlusButtons"
+                    android:onClick="incrementDamage1" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/lifesteal1_text_view"
+                style="@style/StatsText"
+                android:text="@string/lifesteal"
+                android:textSize="@dimen/button_font_size" />
+
+            <!--Lifesteal buttons-->
+            <LinearLayout style="@style/LinearButtons">
+
+                <Button
+                    android:id="@+id/decrementLifesteal1"
+                    style="@style/MinusButtons"
+                    android:onClick="decrementLifesteal1" />
+
+                <EditText
+                    android:id="@+id/lifesteal1_number"
+                    style="@style/StatsNumber"
+                    android:text="0"
+                    android:textSize="@dimen/button_font_size" />
+
+                <Button
+                    android:id="@+id/incrementLifesteal1"
+                    style="@style/PlusButtons"
+                    android:onClick="incrementLifesteal1" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/armorgained_text_view"
+                style="@style/StatsText"
+                android:text="@string/armor"
+                android:textSize="@dimen/button_font_size" />
+
+            <!--Armor buttons-->
+            <LinearLayout style="@style/LinearButtons">
+
+                <Button
+                    android:id="@+id/decrementArmorGained1"
+                    style="@style/MinusButtons"
+                    android:onClick="decrementArmorGained1" />
+
+                <EditText
+                    android:id="@+id/armorGained1_number"
+                    style="@style/StatsNumber"
+                    android:text="0"
+                    android:textSize="@dimen/button_font_size" />
+
+                <Button
+                    android:id="@+id/incrementArmorGained1"
+                    style="@style/PlusButtons"
+                    android:onClick="incrementArmorGained1" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/endTurn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:onClick="endTurn"
+                android:text="@string/endturn" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/player_margin"
+            android:background="@android:color/darker_gray" />
+
+        <!--Player2 side-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/player2"
+                style="@style/PlayerText"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/player_margin"
+                android:fontFamily="@font/graduate"
+                android:text="@string/player2" />
+
+            <TextView
+                android:id="@+id/life2"
+                style="@style/LifeText"
+                android:fontFamily="casual"
+                android:text="Life: 30" />
+
+            <TextView
+                android:id="@+id/armor2"
+                style="@style/ArmorText"
+                android:fontFamily="casual"
+                android:text="Armor: 0" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/damage2_text_view"
+                style="@style/StatsText"
+                android:text="@string/damage"
+                android:textSize="@dimen/button_font_size" />
+
+            <!--Damage buttons-->
+            <LinearLayout style="@style/LinearButtons">
+
+                <Button
+                    android:id="@+id/decrementDamage2"
+                    style="@style/MinusButtons"
+                    android:onClick="decrementDamage2" />
+
+                <EditText
+                    android:id="@+id/damage2_number"
+                    style="@style/StatsNumber"
+                    android:text="0"
+                    android:textSize="@dimen/button_font_size" />
+
+                <Button
+                    android:id="@+id/incrementDamage2"
+                    style="@style/PlusButtons"
+                    android:onClick="incrementDamage2" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/lifesteal2_text_view"
+                style="@style/StatsText"
+                android:text="@string/lifesteal"
+                android:textSize="@dimen/button_font_size" />
+
+            <!--Lifesteal buttons-->
+            <LinearLayout style="@style/LinearButtons">
+
+                <Button
+                    android:id="@+id/decrementLifesteal2"
+                    style="@style/MinusButtons"
+                    android:onClick="decrementLifesteal2" />
+
+                <EditText
+                    android:id="@+id/lifesteal2_number"
+                    style="@style/StatsNumber"
+                    android:text="0"
+                    android:textSize="@dimen/button_font_size" />
+
+                <Button
+                    android:id="@+id/incrementLifesteal2"
+                    style="@style/PlusButtons"
+                    android:onClick="incrementLifesteal2" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/armorgained2_text_view"
+                style="@style/StatsText"
+                android:text="@string/armor"
+                android:textSize="@dimen/button_font_size" />
+
+            <!--Armor buttons-->
+            <LinearLayout style="@style/LinearButtons">
+
+                <Button
+                    android:id="@+id/decrementArmorGained2"
+                    style="@style/MinusButtons"
+                    android:onClick="decrementArmorGained2" />
+
+                <EditText
+                    android:id="@+id/armorGained2_number"
+                    style="@style/StatsNumber"
+                    android:text="0"
+                    android:textSize="@dimen/button_font_size" />
+
+                <Button
+                    android:id="@+id/incrementArmorGained2"
+                    style="@style/PlusButtons"
+                    android:onClick="incrementArmorGained2" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/endTurn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:onClick="endTurn"
+                android:text="@string/endturn"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/end_game"
+        style="@style/PlayerText"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/player_margin"
+        android:fontFamily="@font/graduate"
+        android:text="End"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="2dp"
+        android:onClick="reset"
+        android:text="@string/reset" />
+
+</RelativeLayout>
